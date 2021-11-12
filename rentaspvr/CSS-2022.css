@@ -2,6 +2,7 @@
 body p {
     color: black;
     font-size: 17px !important;
+        font-family: 'Montserrat', sans-serif !important;
 }
 .top-header {
 background: #00b7e0 !important;
@@ -39,7 +40,4 @@ height: 72px!important;
 }
 .col-lg-4.col-md-6.col-sm-6.col-12.propiedad {
     margin-bottom: 15px;
-}
-body p {
-    font-family: 'Montserrat', sans-serif !important;
 }
