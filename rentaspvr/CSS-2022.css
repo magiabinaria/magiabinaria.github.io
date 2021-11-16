@@ -41,3 +41,9 @@ height: 72px!important;
 .col-lg-4.col-md-6.col-sm-6.col-12.propiedad {
     margin-bottom: 15px;
 }
+.contct-nf p {
+height: 1px;
+}
+.contct-nf span, .contct-nf span a {
+    font-size: 1em;
+}
