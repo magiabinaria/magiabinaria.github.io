@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello World</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<style>
+button.darkmode-toggle.darkmode-toggle--white {color: black;}
+button.darkmode-toggle {color: white;}
+</style>
+<script>
+try {
+  // Code that may throw an error goes here
+function addDarkmodeWidget() {
+const options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '&#x2600;', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+}
+window.addEventListener('load', addDarkmodeWidget);
+} catch (error) {
+  //handle the error
+console.error(error);
+//  alert(error); 
+// identifica errores
+if (error == 'ReferenceError: addDarkmodeWidget is not defined') {console.log('Define addDarkmodeWidget para que la app funcione.');}
+}
+</script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Hello World</h1>
+	<h3>Soy texto en h3</h3>
+<p>otro texto</p>
+  </div>
+</body>
+</html>
